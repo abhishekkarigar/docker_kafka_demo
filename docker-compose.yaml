@@ -5,7 +5,7 @@ services:
     ports: 
       - "2181:2181"
   
-  kafka:
+  kafka-cluster:
     image: wurstmeister/kafka:latest
     deploy:
       mode: global
@@ -32,5 +32,5 @@ services:
       KAFKA_CREATE_TOPICS: test1:10:3,test2:10:3
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-        {pwd}/server.properties:/opt/kafka/config/server.properties
+        #{pwd}/server.properties:/opt/kafka/config/server.properties
       
