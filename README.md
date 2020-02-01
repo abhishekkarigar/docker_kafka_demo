@@ -30,11 +30,11 @@ in windows C:\Windows\System32\drivers\etc\hosts
   
 -----------------------------------------------------------------------------------  
 ## ssh into kafka container  
-
+  
 **$ docker exec -it &lt;kafka_container_id&gt; sh**  
 **# kafka-console-producer.sh --borker-list localhost:9092 --topic myTopic**  
     **&gt;**  
-type in the message it will be seen in the next step from windows command line  
+  
 -----------------------------------------------------------------------------------  
   
 ## from local windows command line  
